@@ -14,6 +14,7 @@ import { Label } from "../../components/ui/label"
 import { useState } from "react";
 import { toast } from "sonner";
 import { UploadVideoAPI } from "../../../services/allAPI";
+import AllVideosSection from "./AllVideosSection";
 
 
 
@@ -35,13 +36,6 @@ const AppHeroSection = () => {
         console.log(res);
       }
     }
-    /* function xButtonFunctionClose(){
-      setVideoDetails({
-        name: "",
-        videoURL: "",
-        embededURL: ""
-      })
-    } */
     return (
         <section className="my-5">
             <div className="flex flex-col gap-10">
@@ -85,19 +79,7 @@ const AppHeroSection = () => {
                       </DialogContent>
                     </Dialog>
                 </div>
-                <div>
-                  {videoDetails.embededURL && 
-                  <iframe 
-                    width="560" 
-                    height="315" 
-                    src={videoDetails.embededURL}
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen>
-                  </iframe>}
-                </div>
+              <AllVideosSection/>
             </div>
         </section>
     )
