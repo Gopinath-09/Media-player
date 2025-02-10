@@ -1,34 +1,28 @@
 {
   "videos": [
     {
-      "name": "gopinath",
-      "videoURL": "https://youtu.be/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "embededURL": "https://youtube.com/embed/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "id": 1
+      "name": "Fetch VS AXIOS",
+      "videoURL": "https://youtu.be/OFWATycG_Wc?si=Wpo5zOwztnNWKdu0",
+      "embededURL": "https://youtube.com/embed/OFWATycG_Wc?si=Wpo5zOwztnNWKdu0",
+      "id": 7
     },
     {
-      "name": "gopinath",
-      "videoURL": "https://youtu.be/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "embededURL": "https://youtube.com/embed/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "id": 2
+      "name": "Website S-Tier",
+      "videoURL": "https://youtu.be/qyomWr_C_jA?si=rQR6-95ASXnmiAmd",
+      "embededURL": "https://youtube.com/embed/qyomWr_C_jA?si=rQR6-95ASXnmiAmd",
+      "id": 8
     },
     {
-      "name": "gopinath",
-      "videoURL": "https://youtu.be/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "embededURL": "https://youtube.com/embed/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "id": 3
+      "name": "LARAVEL REVERB",
+      "videoURL": "https://youtu.be/60g-Z-dAWNk?si=UwO5OnqL1_sCjti1",
+      "embededURL": "https://youtube.com/embed/60g-Z-dAWNk?si=UwO5OnqL1_sCjti1",
+      "id": 9
     },
     {
-      "name": "gopi",
-      "videoURL": "https://youtu.be/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "embededURL": "https://youtube.com/embed/onUx22pgiBM?si=I8tY9BlSxV9AkQR1",
-      "id": 4
-    },
-    {
-      "name": "Gopinath",
-      "videoURL": "https://youtu.be/5GG-VUvruzE?si=wI1W2c770P-fEv--",
-      "embededURL": "https://youtube.com/embed/5GG-VUvruzE?si=wI1W2c770P-fEv--",
-      "id": 5
+      "name": "REST API rules",
+      "videoURL": "https://youtu.be/pJ83mmqcvoQ?si=ktIBEqxmbg8hkmF1",
+      "embededURL": "https://youtube.com/embed/pJ83mmqcvoQ?si=ktIBEqxmbg8hkmF1",
+      "id": 10
     }
   ]
 }

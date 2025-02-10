@@ -24,16 +24,18 @@ const AppHeroSection = () => {
       videoURL: "",
       embededURL: ""
     });
-
     async function handleSubmit(e){
       e.preventDefault();
       console.log(videoDetails);
       const {name, videoURL, embededURL} = videoDetails;
       if(!name || !videoURL || !embededURL){
-        toast.warning('Please fill all the fields');
-      }else{
+        return toast.warning('Please fill all the fields');
+      }
+      else if(!videoURL.startsWith('https://youtu.be/')){
+        return toast.warning('Kindly use only youtube copied links in Video URL!');
+      }
+      else{
         const res = await UploadVideoAPI(videoDetails);
-        console.log(res);
       }
     }
     return (
@@ -41,7 +43,7 @@ const AppHeroSection = () => {
             <div className="flex flex-col gap-10">
                 <div className="flex items-center gap-x-3 font-semibold text-4xl">
                     <h3>Upload New Video</h3>
-                    <Dialog >
+                    <Dialog>
                       <DialogTrigger asChild>
                         <MonitorUp className="w-10 h-10 cursor-pointer"/>
                         {/* <Button variant="outline">Edit Profile</Button> */}
@@ -50,7 +52,7 @@ const AppHeroSection = () => {
                         <DialogHeader>
                           <DialogTitle>Add Video Details</DialogTitle>
                           <DialogDescription>
-                            Make changes to your profile here. Click save when you are done.
+                            Kindly add only youtube copied link!.
                           </DialogDescription>
                         </DialogHeader>
                         <div className="grid gap-4 py-4">

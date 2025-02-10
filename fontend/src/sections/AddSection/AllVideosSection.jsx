@@ -19,7 +19,7 @@ function AllVideosSection() {
       <section className="px-3 py-4">
           <BentoGrid className="max-w-4xl mx-auto">
             {
-              allVideos && allVideos.map((d,i)=>(
+              allVideos && allVideos.toReversed().map((d,i)=>(
                   <BentoGridItem
                   key={i}
                   title={d.name}
