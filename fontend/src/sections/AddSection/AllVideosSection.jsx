@@ -14,22 +14,22 @@ function AllVideosSection() {
     useEffect(()=>{
         fetchAllVideos();
     },[]);
-
     return (
       <section className="px-3 py-4">
-          <BentoGrid className="max-w-4xl mx-auto">
-            {
-              allVideos && allVideos.toReversed().map((d,i)=>(
-                  <BentoGridItem
-                  key={i}
-                  title={d.name}
-                  header={d.embededURL ? d.embededURL : <Skeleton className={'h-full'}/>}
-                  className={`bg-transparent border border-orange-500/100 
-                    ${i === 3 || i === 6 ? "md:col-span-2" : ""}`}
-                  />
-              ))
-            }
-          </BentoGrid>
+        <BentoGrid className="max-w-4xl mx-auto">
+          {
+            allVideos && allVideos.toReversed().map((d,i)=>(
+              <div key={i}>
+                <BentoGridItem
+                title={d.name}
+                header={d.embededURL ? d.embededURL : <Skeleton className={'h-full'}/>}
+                className={`bg-transparent border border-orange-500/100 
+                  ${i === 3 || i === 6 ? "md:col-span-2" : ""}`}
+                />
+              </div>
+            ))
+          }
+        </BentoGrid>
       </section>
     )
 }
