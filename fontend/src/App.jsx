@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AddSectionPage from "./pages/AddSectionPage";
 import Header from "./components/Header";
-//import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/add" element={<AddSectionPage />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   );
 };

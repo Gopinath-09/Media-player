@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="col-span-2 space-y-4 max-lg:col-span-1">
                 <h3 className="text-2xl font-bold">Contact Us</h3>
                 <input type="text" placeholder="Email" className="bg-transparent border rounded-md p-1 w-full" />
-                <InteractiveHoverButton className="text-black bg-orange-400 max-md:p-1 max-md:px-2 text-[.8rem]">Subscribe</InteractiveHoverButton>
+                <InteractiveHoverButton className="text-black bg-orange-400 text-[.8rem]">Subscribe</InteractiveHoverButton>
             </div>
         </div>
     </footer>

@@ -14,7 +14,6 @@ import { Label } from "../../components/ui/label"
 import { useState } from "react";
 import { toast } from "sonner";
 import { UploadVideoAPI } from "../../../services/allAPI";
-import AllVideosSection from "./AllVideosSection";
 
 
 
@@ -81,7 +80,6 @@ const AppHeroSection = () => {
                       </DialogContent>
                     </Dialog>
                 </div>
-              <AllVideosSection/>
             </div>
         </section>
     )
