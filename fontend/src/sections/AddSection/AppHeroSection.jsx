@@ -35,6 +35,7 @@ const AppHeroSection = () => {
       }
       else{
         const res = await UploadVideoAPI(videoDetails);
+        if(res.status === 201) toast.success('Created');
       }
     }
     return (
